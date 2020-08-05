@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic tac toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div class="players">
+        <div class="player">
+          <label for="player1">First Player: X</label>
+          <input type="text" id="player1" placeholder="Player Name" />
+        </div>
+        <div class="player">
+          <label for="player1">Second Player: O</label>
+          <input type="text" id="player2" placeholder="Player Name" />
+        </div>
+      </div>
+      <div class="error">
+        Please Add Players Names First
+      </div>
+      <div class="gameboard" data-move="x">
+        <div class="rows">
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+        </div>
+      </div>
+
+      <div class="modal">
+        <div class="modal-content">
+          <p class="winner-name"></p>
+          <button class="btn">Restart</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

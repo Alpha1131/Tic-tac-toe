@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: red;
+}
+
+.container h1 {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.container .players .player {
+  margin: 1rem;
+}
+
+.container .players .player input {
+  margin-left: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.container .error {
+  display: none;
+  background: #f15c00;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.container .gameboard {
+  margin-top: 2.5rem;
+}
+
+.container .gameboard .rows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container .gameboard .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  width: 125px;
+  height: 125px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.container .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.container .modal .modal-content {
+  margin: 15% auto;
+  background: #fff;
+  width: 300px;
+  padding: 5rem 3rem;
+  border-radius: 15px;
+}
+
+.container .modal .modal-content p {
+  font-size: 2rem;
+  color: #36b37e;
+}
+
+.container .modal .modal-content .btn {
+  margin-top: 3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background: #fff;
+  color: #36b37e;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #36b37e;
+}
+
+.container .modal .modal-content .btn:hover {
+  color: #fff;
+  background: #36b37e;
+}
+
+.container .show {
+  display: block;
+}
